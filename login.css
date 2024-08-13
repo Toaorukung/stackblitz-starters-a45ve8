@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-width {
+  width: 150px;
+}
+
+
+body {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+ body {
+            font-family: 'IBM Plex Sans Thai', sans-serif !important;
+        }
+        .custom-btn {
+            background-color: #FF0000;
+            color: white;
+        }
+        .custom-badge {
+            background-color: white;
+            color: #FF0000;
+        }
+        .navbar-nav {
+            flex-direction: column;
+        }
+        .navbar-nav .nav-item {
+            text-align: center;
+        }
+        @media (min-width: 992px) {
+            .navbar-nav {
+                flex-direction: row;
+            }
+            .navbar-nav .nav-item {
+                text-align: left;
+            }
+        }
